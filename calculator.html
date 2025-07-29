@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<link rel="stylesheet" href="./calculator.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="script.js"></script>
+</head>
+<body>
+    <section>
+        <form>
+            <div class="calculator">
+                <input class="input" type="text"  placeholder="0" id="output" >
+                <div class="buttons">
+                        
+                        <button   type="button" style="color: red;" onclick="clearAll()">AC</button>
+                        <button  id="divide" type="button" style="color: red;" onclick="displayData('/')"><i class="fa-solid fa-divide"></i></button>
+                        <button  id="" type="button" style="color: red;" onclick="displayData('%')">%</button>
+                        <button  id="remove" type="button"style="color: red;" onclick="removeLastItem()"><i class="fa-solid fa-delete-left"></i></button>
+    
+                        <button id="seven" type="button" onclick="displayData('7')">7</button>
+                        <button id="eight" type="button" onclick="displayData('8')">8</button>
+                        <button id="nine" type="button" onclick="displayData('9')">9</button>
+                        <button id="multiply" type="button" style="color: red;" onclick="displayData('*')">*</button>
+    
+                        <button id="four" type="button" onclick="displayData('4')">4</button>
+                        <button id="five" type="button" onclick="displayData('5')">5</button>
+                        <button id="six" type="button" onclick="displayData('6')">6</button>
+                        <button id="substract" type="button" style="color: red;" onclick="displayData('-')">-</button>
+    
+                        <button id="one" type="button" onclick="displayData('1')">1</button>
+                        <button id="two" type="button" onclick="displayData('2')">2</button>
+                        <button id="three" type="button" onclick="displayData('3')">3</button>
+                        <button id="plus" type="button" style="color: red;" onclick="displayData('+')">+</button>
+    
+                        <button id="seven" type="button" onclick="displayData('7')">0</button>
+                        <button id="dot" type="button" onclick="displayData('.')">.</button>
+                        <button id="equal" type="button" class="equ" onclick="displayResult()">=</button>
+                    
+                </div>
+                
+            </div>
+        </form>
+    </section>
+    
+</body>
+</html>
